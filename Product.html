@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini E-Commerce Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopEasy</h1>
+    <nav>
+      <select onchange="scrollToDiv(this.value)">
+      <option value="">Product List</option>
+      <option value="section1">Shoes</option>
+      <option value="section2">Wallet</option>
+      <option value="section3">Watch</option>
+      </select>
+      <a href="Index.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+
+    </nav>
+    <div id="cart">
+      🛒 Cart: <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    <center><section class="">
+<br/>      
+      <div class="productpage-card" id="section1">
+        <img src="redSneekers.jpg" alt="Product 1">
+        <h3>Red Sneakers</h3>
+        <p>Stylish and comfortable running shoes.</p>
+        <p class="price">₹1,499</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+<br/>
+      <div class="productpage-card" id="section2">
+        <img src="LeatherWallet.jpeg" alt="Product 2">
+        <h3>Leather Wallet</h3>
+        <p>Premium leather wallet for men.</p>
+        <p class="price">₹999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+<br/>
+      <div class="productpage-card" id="section3">
+        <img src="SmartWatch.jpg" alt="Product 3">
+        <h3>Smart Watch</h3>
+        <p>Track your fitness and stay connected.</p>
+        <p class="price">₹2,999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </section></center>
+  </main>
+
+  <footer>
+    <p>© 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
